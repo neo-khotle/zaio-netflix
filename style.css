@@ -1,5 +1,6 @@
 button {
     background: rgb(229,9,20);
+    color: rgb(250, 250, 250);
     border: none;
 }
 
@@ -26,17 +27,25 @@ button {
 header{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("resources/netflix_bg.jpg");
+    
+    height: 100vh;
 }
 
 #hero{
     display: flex;
     justify-content: space-between;
+       align-items: center;
 }
 #hero-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(250, 250, 250);
 }
+
+
 h1 {
     text-align: center;
 }
@@ -48,14 +57,51 @@ h3{
 form{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     gap: 16px;
 }
 form > :first-child{
-    padding: 12px 16px;
+    width: 85%;
+    height: 40px;
     
 }
 form > :last-child{
-    height: 48px;
-    padding: 0 16px;
+    width: 45%;
+    height: 46px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left:10px; 
+}
+
+
+main, footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 250, 250);
+    padding: 0 20px;
+}
+
+
+#trending{
+    margin: 50px;
+    /*border-radius: 12px;*/
+}
+
+.movie-list{
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+}
+
+.item{
+    position: relative;
+
+}
+
+.item span{
+    position: absolute;
+    left: -15px;
+    bottom: 10px;
+    z-index: 2;
+    font-size: 100px; /*changes the number*/
 }
