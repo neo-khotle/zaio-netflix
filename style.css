@@ -1,0 +1,61 @@
+button {
+    background: rgb(229,9,20);
+    border: none;
+}
+
+/* Base styles for mobile phones */
+#logo {
+    width: 100px;
+}
+/*for tablets*/
+@media (min-width: 768px){
+    #logo{
+        width: 88px;
+        height: 24px;
+       /* padding: 3px;*/
+    }
+}
+/*for PCs*/
+@media (min-width: 1024px){
+    #logo{
+        width: 148px;
+        height: 40px;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+}
+#hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 16px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+form > :first-child{
+    padding: 12px 16px;
+    
+}
+form > :last-child{
+    height: 48px;
+    padding: 0 16px;
+}
