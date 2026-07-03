@@ -53,6 +53,7 @@ h1 {
 h3{
     text-align: center;
     font-size: 16px;
+    font-weight: 400;
 }
 p{
     font-size: 16px;
@@ -131,10 +132,33 @@ body{
     /*font-weight: 500;*/
 }
 
-
-
 .article{
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+/*FAQ Section*/
+#faq{
+    padding: 40px 0 40px 0;
+}
+
+.faq {
+    /*display: block;*/
+    background-color: #2d2d2d;
+    color: white;
+    margin: 10px 0;
+}
+
+.faq summary {
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq p {
+    font-size: 18px;
+    padding: 20px;
+    border-top: 1px solid black;
 }
