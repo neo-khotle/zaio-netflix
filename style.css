@@ -1,164 +1,246 @@
-button {
-    background: rgb(229,9,20);
-    color: rgb(250, 250, 250);
-    border: none;
-}
+/* ==========================================
+   MOBILE (Default: 0px - 767px)
+   ========================================== */
 
-/* Base styles for mobile phones */
-#logo {
-    width: 100px;
-}
-/*for tablets*/
-@media (min-width: 768px){
-    #logo{
-        width: 88px;
-        height: 24px;
-       /* padding: 3px;*/
-    }
-}
-/*for PCs*/
-@media (min-width: 1024px){
-    #logo{
-        width: 148px;
-        height: 40px;
-    }
-}
-
-header{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("resources/netflix_bg.jpg");
-    
-    height: 100vh;
-}
-
-#hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#hero-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(250, 250, 250);
-}
-
-
-h1 {
-    text-align: center;
-}
-
-h3{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-}
-p{
-    font-size: 16px;
-    font-weight: 400;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 16px;
-}
-form > :first-child{
-    width: 85%;
-    height: 40px;
-    
-}
-form > :last-child{
-    width: 45%;
-    height: 46px;
-    font-size: 18px;
-    border-radius: 5px;
-    margin-left:10px; 
-}
-
-
-body{
+/* General */
+body {
     background-color: rgb(0, 0, 0);
     color: rgb(250, 250, 250);
     padding: 0 20px;
     max-width: 100%;
 }
 
-
-#trending{
-    margin: 0 10px 0 10px;
-
+/* Buttons */
+button {
+    background: rgb(229, 9, 20);
+    color: rgb(250, 250, 250);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 32px;
+    width: 72px;
+    cursor: pointer;
 }
 
-.movie-list{
+/* Logo */
+#logo {
+    width: 90px;
+}
+
+/* Header */
+header {
     display: flex;
-    border-radius: 12px;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+        url("resources/netflix_bg.jpg");
+    min-height: 100vh;
+}
+
+/* Hero */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(250, 250, 250);
+    max-width: 600px;
+    width: 100%;
+    padding-top: 75px;
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+form > :first-child {
+    width: 85%;
+    height: 40px;
+}
+
+form > :last-child {
+    width: 45%;
+    min-width: 160px;
+    height: 48px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Trending */
+#trending {
+    margin: 0 10px;
+}
+
+.movie-list {
+    display: flex;
     gap: 24px;
+    border-radius: 12px;
     overflow-x: auto;
-
 }
 
-.item{
+.item {
     position: relative;
-
 }
 
-.item span{
+.item span {
     position: absolute;
     left: -15px;
     bottom: 10px;
     z-index: 2;
-    font-size: 100px; /*changes the number*/
+    font-size: 100px;
 }
 
-#reasons{
+/* Reasons */
+#reasons {
     display: block;
-    padding-top: 30px;  
+    padding-top: 30px;
 }
 
-.card{
-    background-color: blue;
-    border-radius: 12px;
-    height: 197px;
-    padding: 5px 20px;
-    margin-top: 10px
-}
-.card h3{
-    text-align: left;
-    font-size: 20px;
-    /*font-weight: 500;*/
-}
-
-.article{
+.article {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-/*FAQ Section*/
-#faq{
-    padding: 40px 0 40px 0;
+.card {
+    background-color: blue;
+    border-radius: 12px;
+    height: 197px;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+.card h3 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* FAQ */
+#faq {
+    padding: 40px 0;
 }
 
 .faq {
-    /*display: block;*/
     background-color: #2d2d2d;
     color: white;
     margin: 10px 0;
+    align-items: center;
 }
 
 .faq summary {
     padding: 20px;
-    font-size: 24px;
+    font-size: 18px;
     cursor: pointer;
     list-style: none;
 }
 
 .faq p {
-    font-size: 18px;
     padding: 20px;
+    font-size: 18px;
     border-top: 1px solid black;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    align-items: start;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0 0 40px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 45px;
+}
+
+.footer span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ==========================================
+   TABLET (768px and up)
+   ========================================== */
+
+@media (min-width: 768px) {
+
+    button {
+        width: 76px;
+    }
+
+    #logo {
+        width: 88px;
+        height: 24px;
+    }
+
+    #hero-content {
+        max-width: 432px;
+    }
+
+    form {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form > :last-child {
+        max-width: 180px;
+        min-width: 180px;
+    }
+}
+
+
+/* ==========================================
+   PC / DESKTOP (1024px and up)
+   ========================================== */
+
+@media (min-width: 1024px) {
+
+    #logo {
+        width: 148px;
+        height: 40px;
+    }
+
+    #hero {
+        margin: 0 50px;
+    }
+
 }
