@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 
 <body>
-    <header>
+    <header >
         <div class="nav-container"> 
             <section id="hero"> 
                 <img id="logo" src="resources/logo.svg" alt="Netflix Logo">
@@ -16,7 +16,7 @@
             </section>
         </div>
 
-        <section id="hero-content"> 
+        <section id="hero-content" > 
             <h1>Unlimited movies, TV shows, and more</h1>
             <p>Starts at R 59. Cancel anytime.</p>
 
@@ -33,10 +33,12 @@
 
     <main>
         <section id="trending" class="section">
+            
             <h2>Trending Now</h2>
 
             <div class="movie-list"> 
-
+                <button class="scroll-btn left">&#10094;</button>
+            
                 <div class="item">
                     <span>1</span>
                     <img src="resources/1.webp"
@@ -96,7 +98,23 @@
                     <img src="resources/10.webp"
                         alt="Mortal Kombat">
                 </div>
+                <button class="scroll-btn right">&#10095;</button>
             </div>
+        </section>
+<!-- 
+        <section class="video">
+            <video class="responsive-video" controls autoplay muted>
+                <source src="https://youtu.be/embed/8TZMtslA3UY?si=6qc3utcK7fLlQ8R6" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    -->
+        <section class="video"> 
+            <iframe  class="responsive-video"
+                src="https://www.youtube.com/embed/8TZMtslA3UY?trPPaEBsi=bhBzZ5_xY" 
+                title="YouTube video player" 
+                allowfullscreen>
+            </iframe>
         </section>
 
         <section id="reasons" class="section">
@@ -109,7 +127,7 @@
                     <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, 
                         Apple TV, Blu-ray players, and more.</p>
 
-                    <img src="" alt="TV Icon">
+                    <img src="resources/tv2.svg" alt="TV Icon">
                 </article>
 
                 <article class="card">
@@ -117,7 +135,7 @@
 
                     <p>Save your favorites easily and always have something to watch.</p>
 
-                    <img src="" alt="Download Icon">
+                    <img src="resources/arrow_circle_down2.svg" alt="Download Icon">
                 </article>
 
                 <article class="card">
@@ -126,7 +144,7 @@
                     <p>Stream unlimited movies and TV shows on your phone, tablet, 
                         laptop, and TV.</p>
 
-                    <img src="" alt="Telescope Icon">
+                    <img src="resources/devices2.svg" alt="Devices Icon">
                 </article>
 
                 <article class="card">
@@ -135,7 +153,7 @@
                     <p>Send kids on adventures with their favorite characters in a 
                         space made just for them — free with your membership.</p>
 
-                    <img src="" alt="Faces Icon">
+                    <img src="resources/faces2.svg" alt="Face Icon">
                 </article>
             </div>
         </section>
@@ -240,7 +258,7 @@
             <option>Arabic</option>
         </select>
 
-        <span>Netflix</span>
+        <p>Netflix</p>
 
         <span>
             This page is protected by Google reCAPTCHA to ensure you're not a bot.
